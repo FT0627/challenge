@@ -39,3 +39,29 @@ header {
   font-size: 16px;
   color: #FAFAFA;
 }
+
+.main-visual {
+  width: 100%;
+  height: 650px;
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-visual-content{
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  padding: 200px;
+}
+
+.main-visual-title{
+  color: #FAFAFA;
+  font-size: 64px;
+}
+
+.main-visual-subtitle{
+  margin-top: 10px;
+  color: #FAFAFA;
+  font-size: 20px;
+}
