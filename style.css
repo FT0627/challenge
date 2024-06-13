@@ -65,3 +65,39 @@ header {
   color: #FAFAFA;
   font-size: 20px;
 }
+
+.main-portfolio{
+  width: 920px;
+  padding-top: 90px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-content-title{
+  font-size: 32px;
+  color: #000000;
+  position: relative;
+}
+
+.main-content-title:before {
+  position: absolute; /*positionをabsoluteに指定*/
+  content: "";
+  display: inline-block;
+  background-color: #EC715F; /*下線の色*/
+  width: 70px; /*線の幅*/
+  height: 3px; /*線の太さ*/
+  left: 50%;  /*線のヨコ位置*/
+  bottom: 0px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/}
+
+.main-feature{
+  width: 980px;
+  padding-top: 90px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-content-text{
+  margin: 41px 0;
+}
