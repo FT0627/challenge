@@ -67,11 +67,15 @@ header {
 }
 
 .main-portfolio{
-  width: 920px;
+  width: 100%;
   padding-top: 90px;
   margin: 0 auto;
   text-align: center;
   background-color: #ECEFF1;
+}
+
+.main-portfolio .portfolio{
+  width: 920px;
 }
 
 .main-content-title{
@@ -81,13 +85,13 @@ header {
 }
 
 .main-content-title:before {
-  position: absolute; 
+  position: absolute;
   content: "";
   display: inline-block;
-  background-color: #EC715F; 
-  width: 70px; 
-  height: 3px; 
-  left: 50%; 
+  background-color: #EC715F;
+  width: 70px;
+  height: 3px;
+  left: 50%;
   bottom: 0px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -105,11 +109,13 @@ header {
 }
 
 .main-content-image{
+  width: 920px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-.image{
+.main-content-image .image{
   width: 300px;
   height: 250px;
   background-size: cover;
@@ -117,38 +123,37 @@ header {
   margin-bottom: 90px;
 }
 
-.image:nth-child(1){
+.main-content-image .image:nth-child(1){
   background-image: url(img/sketch.jpg);
   margin: 0 10px 10px 0;
 }
 
-.image:nth-child(2){
+.main-content-image .image:nth-child(2){
   background-image: url(img/websuku.png);
   margin: 0 10px 10px 0;
 }
 
-.image:nth-child(3){
+.main-content-image .image:nth-child(3){
   background-image: url(img/write.jpg);
   margin-bottom: 10px;
 }
 
-.image:nth-child(4){
+.main-content-image .image:nth-child(4){
   background-image: url(img/webcamp.png);
   margin-right: 10px;
 }
 
-.image:nth-child(5){
+.main-content-image .image:nth-child(5){
   background-image: url(img/talk.jpg);
   margin-right: 10px;
 }
 
-.image:nth-child(6){
+.main-content-image .image:nth-child(6){
   background-image: url(img/webcamp-mother.png);
 }
 
-.main-content-figure{
+.main-content-figure, .explanation{
   display: flex;
-  flex-wrap: wrap;
 }
 
 .figure{
@@ -170,15 +175,48 @@ header {
   color: #000000;
 }
 
-.figure-text{
+.figure-text, .profile-info{
   display: inline-block;
   text-align: left;
 }
 
 .main-profile{
-  width: 1024px;
+  width: 100%;
   padding: 90px 0;
   text-align: center;
   background-color: #ECEFF1;
+}
+
+.profile{
+  width: 1024px;
   margin: 0 auto;
 }
+
+.profile-image, .profile-info{
+  width: 512px;
+  height: 250px;
+}
+
+.profile-image .image{
+  width: 250px;
+  height: 250px;
+  background-image: url(img/my-icon.jpg);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
+.profile-info .title{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.profile-info .text{
+  font-size: 16px;
+  color: #000000;
+}
+
+.name-text{
+  margin-bottom: 20px;
+}
+
