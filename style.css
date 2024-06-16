@@ -68,7 +68,7 @@ header {
 
 .main-portfolio{
   width: 100%;
-  padding-top: 90px;
+  padding: 90px 0;
   margin: 0 auto;
   text-align: center;
   background-color: #ECEFF1;
@@ -98,10 +98,15 @@ header {
 }
 
 .main-feature{
-  width: 980px;
+  width: 100%;
   padding: 90px 0;
   margin: 0 auto;
   text-align: center;
+}
+
+.feature{
+  width: 980px;
+  margin: 0 auto;
 }
 
 .main-content-text{
@@ -152,7 +157,7 @@ header {
   background-image: url(img/webcamp-mother.png);
 }
 
-.main-content-figure, .explanation{
+.detail{
   display: flex;
 }
 
@@ -175,7 +180,7 @@ header {
   color: #000000;
 }
 
-.figure-text, .profile-info{
+.figure-text, .profile-info, .mass{
   display: inline-block;
   text-align: left;
 }
@@ -220,3 +225,52 @@ header {
   margin-bottom: 20px;
 }
 
+.main-contact{
+  width: 100%;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.contact{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.contact-address{
+  width: 400px;
+  margin: 0 auto;
+}
+
+.mass .title{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.mass .info{
+  text-decoration: underline;
+}
+
+.fa-brands{
+  font-size: 50px;
+}
+
+.fa-x-twitter{
+  margin: 0 20px;
+}
+
+.contact-address .info.email {
+  margin-bottom: 20px;
+}
+
+footer{
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #EC715F;
+}
+
+footer .text{
+  color: #FAFAFA;
+  font-size: 16px;
+}
