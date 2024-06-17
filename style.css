@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *{
   margin: 0;
   padding: 0;
@@ -282,13 +284,79 @@ footer .text{
 @media screen and (max-width: 767px){
   header{
     height: 50px;
-    line-height: 50px;
   }
 
   .header-logo{
    height: 50px;
   }
 
+  #hm-icon{
+    position: flexed;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+  }
+
+  .menu-trigger,
+  .menu-trigger .span{
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+  }
+
+  .menu-trigger{
+    position: relative;
+    width: 50px;
+    height: 30px;
+  }
+
+  .menu-trigger span{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #FFF;
+    border-radius: 4px;
+  }
+
+  .menu-trigger span:nth-child(1){
+    top: 0;
+  }
+
+  .menu-trigger span:nth-child(2){
+    top: 13px;
+  }
+
+  .menu-trigger span:nth-child(3){
+    bottom: 0;
+  }
+
+  .menu-trigger.active span:nth-child(1){
+    -webkit-transform: translateY(20px) rotate(-45deg);
+    transform: translateY(20px) rotate(-45deg);
+    background-color: #FFF;
+  }
+
+  .menu-trigger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-trigger.active span:nth-child(3){
+    -webkit-transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-20px) rotate(45deg);
+    background-color: #FFF;
+  }
+
+  #sp-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #FFF;
+    width: 100%;
+    min-height: 100%;
+    display: none;
+    z-index: 9;
+  }
 
   .header-content, .main-visual-content,
   .portfolio, .feature, .profile, .contact{
